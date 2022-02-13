@@ -16,21 +16,29 @@ export default {
 <style>
 body,
 html {
+  all:unset;
   background-color: dark-grey;
   color: #eee;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Open Sans", sans-serif;
-  background: #1d1f20;
+  background: rgba(55,55,55,0.9);
+  height:100%;
+  width:100%;
 }
 
 #container {
   width: 1000px;
   max-width: 78vw;
-  background-color: grey;
   margin: auto;
 }
-#banner{
-  background-color: teal;
-  min-height:10vh;
+#container.light {
+  background-color: rgba(55,55,55,1);
+}
+#footer{
+text-align:right;
+}
+/* reset browser default */
+h1{
+  all:unset;
 }
 </style>
