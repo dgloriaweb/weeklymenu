@@ -17,7 +17,6 @@ export default {
 body,
 html {
   all:unset;
-  background-color: dark-grey;
   color: #eee;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
@@ -40,5 +39,8 @@ text-align:right;
 /* reset browser default */
 h1{
   all:unset;
+}
+a{
+  color:unset;
 }
 </style>

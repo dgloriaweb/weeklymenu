@@ -1,31 +1,31 @@
 <template>
-<header class="header">
-  <a href="" class="logo">CSS Nav</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a href="#work">Our Work</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#careers">Careers</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</header>
+  <header class="header">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"
+      ><span class="navicon"></span
+    ></label>
+    <ul class="menu">
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#careers">Careers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+
+}
 </script>
 
 <style  scoped>
-
 /* header */
 
 .header {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
+  background-color: rgb(55, 55, 55);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  /* position: fixed; */
   width: 100%;
   z-index: 3;
 }
@@ -35,7 +35,7 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #757575;
 }
 
 .header li a {
@@ -48,6 +48,7 @@
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: #f4f4f4;
+  color: #333;
 }
 
 .header .logo {
@@ -63,7 +64,7 @@
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 /* menu icon */
@@ -71,29 +72,29 @@
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-text-align:right;
+  text-align: right;
   padding: 28px 20px;
   position: relative;
   user-select: none;
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: #eee;
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: background 0.2s ease-out;
   width: 18px;
 }
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
+  background: #eee;
+  content: "";
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   width: 100%;
 }
 
@@ -150,5 +151,4 @@ text-align:right;
     display: none;
   }
 }
-
 </style>
