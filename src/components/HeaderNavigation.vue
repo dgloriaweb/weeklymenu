@@ -1,12 +1,13 @@
+<!-- https://codepen.io/mutedblues/pen/MmPNPG -->
 <template>
-  <header class="header">&nbsp;
+  <header class="header">
+    &nbsp;
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"
       ><span class="navicon"></span
     ></label>
     <ul class="menu">
-      <li>   <router-link to="TipsNTricks">Tips &amp; Tricks</router-link>  </li>
-   
+      <li><router-link to="/tipsNTricks">Tips &amp; Tricks</router-link></li>
     </ul>
   </header>
 </template>
@@ -26,7 +27,7 @@ export default {
   position: fixed;
   width: 100%;
   z-index: 3;
-  padding:8px 0;
+  padding: 8px 0;
 }
 
 .header ul {
@@ -56,12 +57,12 @@ export default {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
-  }
+}
 
 /* menu icon */
 
 .header .menu-icon {
-    font-size:14px;
+  font-size: 14px;
   cursor: pointer;
   display: inline-block;
   text-align: right;
