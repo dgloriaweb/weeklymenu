@@ -1,14 +1,12 @@
 <template>
-  <header class="header">
+  <header class="header">&nbsp;
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"
       ><span class="navicon"></span
     ></label>
     <ul class="menu">
-      <li><a href="#work">Our Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#careers">Careers</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li>   <router-link to="TipsNTricks">Tips &amp; Tricks</router-link>  </li>
+   
     </ul>
   </header>
 </template>
@@ -25,9 +23,10 @@ export default {
 .header {
   background-color: rgb(55, 55, 55);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
   z-index: 3;
+  padding:8px 0;
 }
 
 .header ul {
@@ -40,7 +39,7 @@ export default {
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 8px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
@@ -51,29 +50,22 @@ export default {
   color: #333;
 }
 
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
 /* menu */
 
 .header .menu {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
-}
+  }
 
 /* menu icon */
 
 .header .menu-icon {
+    font-size:14px;
   cursor: pointer;
   display: inline-block;
   text-align: right;
-  padding: 28px 20px;
+  padding: 8px 20px;
   position: relative;
   user-select: none;
 }
@@ -140,7 +132,7 @@ export default {
     float: left;
   }
   .header li a {
-    padding: 20px 30px;
+    padding: 8px 30px;
   }
   .header .menu {
     clear: none;

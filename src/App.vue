@@ -16,13 +16,13 @@ export default {
 <style>
 body,
 html {
-  all:unset;
+  all: unset;
   color: #eee;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
-  background: rgba(55,55,55,0.9);
-  height:100%;
-  width:100%;
+  background: rgba(55, 55, 55, 0.9);
+  height: 100%;
+  width: 100%;
 }
 
 #container {
@@ -31,16 +31,26 @@ html {
   margin: auto;
 }
 #container.light {
-  background-color: rgba(55,55,55,1);
+  background-color: rgba(55, 55, 55, 1);
 }
-#footer{
-text-align:right;
+#footer {
+  text-align: right;
+  background: rgba(55, 55, 55, 0.9);
+  padding: 2px 0;
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+#main {
+  min-height: calc(
+    90vh - 48px
+  ); /*header, banner, footer  subtracted from full height */
 }
 /* reset browser default */
-h1{
-  all:unset;
+h1 {
+  all: unset;
 }
-a{
-  color:unset;
+a {
+  color: unset;
 }
 </style>
